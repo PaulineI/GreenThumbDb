@@ -8,18 +8,11 @@
         Title="AddTravelWindow" Height="450" Width="600"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <!--<Grid.Background>
-        <ImageBrush ImageSource="green-thumb-logo.png" Opacity="0.7" Stretch="Uniform">
-        <ImageBrush.RelativeTransform>
-        <TransformGroup>
-        <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-        <SkewTransform CenterX="0.5" CenterY="0.5"/>
-        <RotateTransform CenterX="0.5" CenterY="0.5"/>
-        <TranslateTransform X="0"/>
-        </TransformGroup>
-        </ImageBrush.RelativeTransform>
-        </ImageBrush>
-        </Grid.Background>-->
+        <Grid.Background>
+            <ImageBrush ImageSource="green-thumb-logo.png" 
+                        Stretch="None" 
+                        Opacity="0.5"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition/>
@@ -119,10 +112,12 @@
             Grid.Row="1"
             Height="30"
             Width="70"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
             Background="LightGray"
             BorderBrush="DarkOliveGreen"
             BorderThickness="2"
-            Foreground="#FF080000" Click="btnReturn_Click"
+            Foreground="#FF080000" Click="btnReturn_Click" Margin="25,0,0,0"
             />
         <ListView
             Name ="lstInstructions"

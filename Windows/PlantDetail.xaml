@@ -98,7 +98,7 @@
                 Grid.Column="3"
                 Grid.Row="5"
                 Margin="92,5,91,4"
-            >
+                >
                 <Image.OpacityMask>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.5">
                         <GradientStop Color="Black"/>
@@ -110,12 +110,12 @@
                 </Image.Source>
             </Image>
             <Image
-                    Width="70"
-                    Height="70"
-                    Grid.Column="2"
-                    Grid.Row="5"
-                    Margin="92,5,91,4"
-            >
+                Width="70"
+                Height="70"
+                Grid.Column="2"
+                Grid.Row="5"
+                Margin="92,5,91,4"
+                >
                 <Image.OpacityMask>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.5">
                         <GradientStop Color="Black"/>
@@ -132,7 +132,7 @@
                 Grid.Column="1"
                 Grid.Row="5"
                 Margin="92,5,91,4" Opacity="0.5"
-            >
+                >
                 <Image.Source>
                     <BitmapImage UriSource="green-thumb-logo.png"/>
                 </Image.Source>
