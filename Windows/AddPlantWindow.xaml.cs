@@ -45,21 +45,24 @@ namespace GreenThumb
             string instructions = txtInstructions.Text;
 
             //Lägg till flera instructions
-
-            InstructionModel model = new()
+            if (!string.IsNullOrWhiteSpace(instructions))
             {
-                Instruction = instructions,
+                InstructionModel model = new()
+                {
+                    Instruction = instructions,
 
-            };
-            ListViewItem item = new();
+                };
 
-            item.Tag = model;
-            item.Content = instructions;
+                ListViewItem item = new();
 
-            lstInstructions.Items.Add(item);
+                item.Tag = model;
+                item.Content = instructions;
 
-            // Rensa UI:t
-            txtInstructions.Text = "";
+                lstInstructions.Items.Add(item);
+
+                // Rensa UI:t
+                txtInstructions.Text = "";
+            }
 
         }
 
