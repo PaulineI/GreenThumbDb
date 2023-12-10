@@ -63,7 +63,6 @@ namespace GreenThumb
                 // Rensa UI:t
                 txtInstructions.Text = "";
             }
-
         }
 
         private async void btnSavePlant_Click(object sender, RoutedEventArgs e)
